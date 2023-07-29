@@ -1,0 +1,27 @@
+H1{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    padding: 17px;
+    font-size: 56px;
+}
+
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.myInput{
+    /* display: block; */
+    width: 36%;
+    padding: 11px;
+    margin: 8px;
+    font-size: 18px;
+    border: 2px solid #774747;
+    border-radius: 26px;
+    outline: none;
+
+}

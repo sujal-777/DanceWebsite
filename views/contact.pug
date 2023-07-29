@@ -1,0 +1,30 @@
+extends base.pug
+
+block scripts
+    script(src = '/static/index.js')
+            
+block style 
+    style
+        include ../static/style.css
+        include ../static/contactstyle.css
+
+block content
+    nav#navbar
+     ul
+      div#logo
+        img(src="/static/img/logo.png")
+        | DA
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Services]
+        li #[a(href="/") Class Info]
+        li #[a(href="/") Contact Us]
+
+
+    H1 Contact Us </H1>
+       form(action= "/contact", method= "post", class= "myForm")
+        <input type="text" name="firstname" class = "myInput" placeholder="Your Firstname..">
+        <input type="text" name="Lastname" class = "myInput" placeholder="Your Lastname..">
+        <input type="phone" class= "myInput" name="phone" placeholder="Your Phone no..">
+        <input type="email" class= "myInput" name="email" placeholder="Enter your email..">
+        <input type="Submit" name = "Submit" class = "myInput" placeholder = "Submit">

@@ -1,0 +1,26 @@
+//- layout.pug
+doctype html
+html
+  head
+    title Dance Academy
+    block scripts
+    block style 
+        //- script(src='/jquery.js')
+  body
+    block content
+        nav#navbar
+         ul
+          div#logo
+            img(src="/static/img/logo.png")
+            | DA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    
+    block foot
+    footer#footer
+        | Copyright © 2023 Sujal Dance Academy.com | All Rights Reserved
+        //- #footer
+        //-   p some footer content
